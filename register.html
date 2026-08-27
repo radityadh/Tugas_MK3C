@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Kopi Senja Coffee Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="register-container">
+
+      <div class="brand">
+        <div class="coffee-cup" aria-hidden="true">
+          <span class="steam steam1"></span>
+          <span class="steam steam2"></span>
+          <span class="steam steam3"></span>
+          <div class="cup-body"><div class="cup-shine"></div></div>
+          <div class="cup-handle"></div>
+        </div>
+        <h1>Registrasi</h1>
+        <p class="subtitle">Gabung jadi member Kopi Senja</p>
+      </div>
+
+      <form action="#">
+        <div class="field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" name="nama" id="nama"
+            placeholder="Masukkan Nama Lengkap">
+        </div>
+
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username"
+            placeholder="Masukkan Username">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"
+            placeholder="Masukkan Email">
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"
+            placeholder="Masukkan Password">
+        </div>
+
+        <div class="field">
+          <label for="konfirmasi-password">Konfirmasi Password</label>
+          <input type="password" id="konfirmasi-password"
+            name="konfirmasi-password"
+            placeholder="Masukkan Kembali Password">
+        </div>
+
+        <div class="field">
+          <label for="tanggal-lahir">Tanggal Lahir</label>
+          <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+        </div>
+
+        <div class="field">
+          <label>Jenis Kelamin</label>
+          <div class="radio-row">
+            <label class="radio-option" for="laki-laki">
+              <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+              <span>Laki-laki</span>
+            </label>
+            <label class="radio-option" for="perempuan">
+              <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+              <span>Perempuan</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="alamat">Alamat</label>
+          <textarea id="alamat" name="alamat"
+            placeholder="Masukkan Alamat"></textarea>
+        </div>
+
+        <button type="button" onclick="cekRegister()">Daftar</button>
+
+        <div class="links">
+          <p>Sudah memiliki akun? <a href="index.html">Login di sini</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
